@@ -72,7 +72,7 @@ afterEvaluate {
 
                 groupId = "com.github.JiSeokYeom"
                 artifactId = ""
-                version = "0.6"
+                version = "0.7"
 
                 artifact(tasks["sourceJar"])
             }
@@ -81,7 +81,7 @@ afterEvaluate {
 
                 groupId = "com.github.JiSeokYeom"
                 artifactId = "final-debug"
-                version = "0.6"
+                version = "0.7"
 
                 artifact(tasks["sourceJar"])
 
