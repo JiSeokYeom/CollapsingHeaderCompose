@@ -64,6 +64,6 @@ dependencies {
     debugImplementation("androidx.compose.ui:ui-tooling")
     debugImplementation("androidx.compose.ui:ui-test-manifest")
 
-    //implementation("com.github.JiSeokYeom:CollapsingHeaderCompose:0.5")
+    implementation("com.github.JiSeokYeom:CollapsingHeaderCompose:0.7")
 
 }

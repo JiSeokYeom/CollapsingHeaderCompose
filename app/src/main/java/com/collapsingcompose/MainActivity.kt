@@ -25,6 +25,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.collapsingcompose.ui.theme.CollapsingHeaderComposeTheme
+import com.collapsingheadercompose.CollapsingHeaderCompose
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -36,7 +37,7 @@ class MainActivity : ComponentActivity() {
                 Column(
                     modifier = Modifier.fillMaxSize()
                 ) {
-                   /* CollapsingHeaderCompose(
+                    CollapsingHeaderCompose(
                         modifier = Modifier.fillMaxSize(),
                         listState = lazyListState,
                         isTopContentVisible = isTopContentVisible,
@@ -98,7 +99,7 @@ class MainActivity : ComponentActivity() {
                                 }
                             }
                         }
-                    )*/
+                    )
                 }
             }
         }
