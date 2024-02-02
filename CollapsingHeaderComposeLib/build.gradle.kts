@@ -3,7 +3,6 @@ plugins {
     id("org.jetbrains.kotlin.android")
     id("maven-publish")
 }
-val compose_ui_version = "1.6.1"
 
 android {
     namespace = "com.collapsingheadercompose"
@@ -22,6 +21,7 @@ android {
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
         }
     }
+
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
@@ -32,6 +32,8 @@ android {
     buildFeatures {
         compose = true
     }
+
+    resourcePrefix = "wtbar_"
 
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.2"
@@ -55,8 +57,6 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
 }
 
-group = ""
-
 afterEvaluate {
     publishing {
         publications {
@@ -65,14 +65,14 @@ afterEvaluate {
 
                 groupId = "com.github.JiSeokYeom"
                 artifactId = ""
-                version = "0.3"
+                version = "0.4"
             }
             create<MavenPublication>("debug") {
                 from(components["debug"])
 
                 groupId = "com.github.JiSeokYeom"
                 artifactId = "final-debug"
-                version = "0.3"
+                version = "0.4"
             }
         }
     }
