@@ -55,4 +55,25 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
 }
 
-group = "com.github.JiSeokYeom"
+group = ""
+
+afterEvaluate {
+    publishing {
+        publications {
+            create<MavenPublication>("release") {
+                from(components["release"])
+
+                groupId = "com.github.JiSeokYeom"
+                artifactId = ""
+                version = "0.3"
+            }
+            create<MavenPublication>("debug") {
+                from(components["debug"])
+
+                groupId = "com.github.JiSeokYeom"
+                artifactId = "final-debug"
+                version = "0.3"
+            }
+        }
+    }
+}
