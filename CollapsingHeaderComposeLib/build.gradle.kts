@@ -38,6 +38,11 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = "1.4.2"
     }
+
+    tasks.register<Jar>("sourceJar") {
+        from(android.sourceSets["main"].java.srcDirs)
+        archiveClassifier.set("sources")
+    }
 }
 
 dependencies {
@@ -57,6 +62,8 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
 }
 
+
+
 afterEvaluate {
     publishing {
         publications {
@@ -65,14 +72,19 @@ afterEvaluate {
 
                 groupId = "com.github.JiSeokYeom"
                 artifactId = ""
-                version = "0.4"
+                version = "0.5"
+
+                artifact(tasks["sourceJar"])
             }
             create<MavenPublication>("debug") {
                 from(components["debug"])
 
                 groupId = "com.github.JiSeokYeom"
                 artifactId = "final-debug"
-                version = "0.4"
+                version = "0.5"
+
+                artifact(tasks["sourceJar"])
+
             }
         }
     }
