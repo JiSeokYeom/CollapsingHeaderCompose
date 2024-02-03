@@ -16,6 +16,7 @@ android {
     }
 
     buildTypes {
+
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
@@ -76,16 +77,9 @@ afterEvaluate {
 
                 artifact(tasks["sourceJar"])
             }
-            create<MavenPublication>("debug") {
-                from(components["debug"])
-
-                groupId = "com.github.JiSeokYeom"
-                artifactId = "final-debug"
-                version = "1.0"
-
-                artifact(tasks["sourceJar"])
-            }
         }
     }
 }
+
+
 
