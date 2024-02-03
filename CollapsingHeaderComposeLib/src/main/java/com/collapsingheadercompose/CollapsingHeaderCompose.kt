@@ -91,7 +91,6 @@ fun CollapsingHeaderCompose(
 
             lazyColumnContent()
 
-
         }
     }
 
