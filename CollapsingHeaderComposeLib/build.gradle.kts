@@ -63,8 +63,6 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
 }
 
-
-
 afterEvaluate {
     publishing {
         publications {
@@ -72,14 +70,22 @@ afterEvaluate {
                 from(components["release"])
 
                 groupId = "com.github.JiSeokYeom"
-                artifactId = "CollapsingHeaderCompose"
+                artifactId = "final"
                 version = "1.0"
 
                 artifact(tasks["sourceJar"])
             }
+            create<MavenPublication>("debug") {
+                from(components["debug"])
+
+                groupId = "com.github.JiSeokYeom"
+                artifactId = "final-debug"
+                version = "1.0"
+
+                artifact(tasks["sourceJar"])
+
+            }
         }
     }
 }
-
-
 
