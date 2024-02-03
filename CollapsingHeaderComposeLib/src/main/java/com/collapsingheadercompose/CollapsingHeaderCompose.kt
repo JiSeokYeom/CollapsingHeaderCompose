@@ -24,6 +24,7 @@ import androidx.compose.ui.Modifier
  * 형태로 넘겨 받음
  * (A variable that determines whether TopContent is visible or hidden. Normally, var isTopContentVisible by remember { mutableStateOf(true) }
  * Handed over in the form)
+ * @param isScrollEnabled 스크롤 비활성화 / 활성화 시키는 변수 (Variable for disabling/activating scrolling)
  * @param isStickyHeaderVisible StickyHeader가 보여질지 숨길지 정하는 변수 (Variable that determines whether StickyHeader will be shown or hidden)
  * @param onChangeTopContent 스크롤에 따라 TopContent가 보여질지 숨길지 정하는 콜백 함수 (A callback function that determines whether TopContent is shown or hidden according to scrolling.)
  * @param topContent 가장 상단에 보여줄 컴포저블 함수 (Composable function shown at the top)
