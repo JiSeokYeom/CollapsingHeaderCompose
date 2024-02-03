@@ -70,8 +70,8 @@ afterEvaluate {
                 from(components["release"])
 
                 groupId = "com.github.JiSeokYeom"
-                artifactId = "final"
-                version = "1.0"
+                artifactId = ""
+                version = "0.7"
 
                 artifact(tasks["sourceJar"])
             }
@@ -80,7 +80,7 @@ afterEvaluate {
 
                 groupId = "com.github.JiSeokYeom"
                 artifactId = "final-debug"
-                version = "1.0"
+                version = "0.7"
 
                 artifact(tasks["sourceJar"])
 
