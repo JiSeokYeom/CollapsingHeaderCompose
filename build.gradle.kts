@@ -5,13 +5,16 @@
 buildscript {
     dependencies {
         classpath("com.github.dcendents:android-maven-gradle-plugin:2.1")
-    }
-
-    dependencies {
         classpath("com.android.tools.build:gradle:8.2.0")
     }
+
     repositories {
         google()
+        mavenCentral()
+        maven {
+            url = uri("https://jitpack.io")
+        }
+
     }
 
 }
