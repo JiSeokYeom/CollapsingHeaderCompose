@@ -70,7 +70,7 @@ afterEvaluate {
                 from(components["release"])
 
                 groupId = "com.github.JiSeokYeom"
-                artifactId = ""
+                artifactId = "CollapsingHeaderCompose"
                 version = "0.7"
 
                 artifact(tasks["sourceJar"])
@@ -79,7 +79,7 @@ afterEvaluate {
                 from(components["debug"])
 
                 groupId = "com.github.JiSeokYeom"
-                artifactId = "final-debug"
+                artifactId = "CollapsingHeaderCompose-debug"
                 version = "0.7"
 
                 artifact(tasks["sourceJar"])
