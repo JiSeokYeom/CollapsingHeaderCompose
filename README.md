@@ -1,4 +1,4 @@
-# CollapsingHeaderCompose (Anto)
+# CollapsingHeaderCompose (Auto)
 
 ## Introduction
 
