@@ -16,6 +16,7 @@ android {
     }
 
     buildTypes {
+
         release {
             isMinifyEnabled = false
             proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
@@ -62,8 +63,6 @@ dependencies {
     implementation("androidx.compose.ui:ui-tooling-preview")
 }
 
-
-
 afterEvaluate {
     publishing {
         publications {
@@ -71,8 +70,8 @@ afterEvaluate {
                 from(components["release"])
 
                 groupId = "com.github.JiSeokYeom"
-                artifactId = ""
-                version = "0.9"
+                artifactId = "final"
+                version = "1.0"
 
                 artifact(tasks["sourceJar"])
             }
@@ -81,7 +80,7 @@ afterEvaluate {
 
                 groupId = "com.github.JiSeokYeom"
                 artifactId = "final-debug"
-                version = "0.9"
+                version = "1.0"
 
                 artifact(tasks["sourceJar"])
 
@@ -89,3 +88,4 @@ afterEvaluate {
         }
     }
 }
+
