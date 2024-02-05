@@ -78,7 +78,7 @@ CollapsingHeaderComposeTheme {
                         }
                     )
                 }
-
+}
 ```
 
 ## Property
