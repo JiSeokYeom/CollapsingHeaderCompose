@@ -102,6 +102,7 @@ fun CollapsingHeaderCompose(
 ```
 
 기본 modifier를 설정 해준다. (옵션 / 기본값 - Modifier)
+
 Sets the basic modifier (option / Default - Modifier)
 
 ```kotlin
@@ -109,6 +110,7 @@ Sets the basic modifier (option / Default - Modifier)
 ```
 
 해당 함수 호출전 LazyListState 전달. (필수)
+
 Pass LazyListState before calling the function (required)
 
 ```kotlin
@@ -116,6 +118,7 @@ Pass LazyListState before calling the function (required)
 ```
 
 TopContent가 보여질지 숨길지 정하는 변수 (필수)
+
 Variable that determines whether TopContent is shown or hidden (required)
 
 ```kotlin
@@ -123,6 +126,7 @@ Variable that determines whether TopContent is shown or hidden (required)
 ```
 
 스크롤 비활성화 / 활성화 시키는 변수 (옵션 / 기본값 - true)
+
 Variable for disabling/activating scrolling (option / Default - true)
 
 ```kotlin
@@ -130,6 +134,7 @@ Variable for disabling/activating scrolling (option / Default - true)
 ```
 
 StickyHeader가 보여질지 숨길지 정하는 변수 (옵션 / 기본 값 - true)
+
 Variable that determines whether StickyHeader will be shown or hidden (option / Default - true)
 
 ```kotlin
@@ -137,6 +142,7 @@ Variable that determines whether StickyHeader will be shown or hidden (option / 
 ```
 
 스크롤에 따라 TopContent가 보여질지 숨길지 정하는 콜백 함수 (필수 / 리턴값 Boolean)
+
 A callback function that determines whether TopContent is shown or hidden according to scrolling (required / Return value Boolean)
 
 ```kotlin
@@ -144,6 +150,7 @@ A callback function that determines whether TopContent is shown or hidden accord
 ```
 
 가장 상단에 보여줄 컴포저블 함수 (옵션 / 기본 값 - Unit)
+
 Composable function shown at the top (option / Default - Unit)
 
 ```kotlin
@@ -151,6 +158,7 @@ Composable function shown at the top (option / Default - Unit)
 ```
 
 stickyHeader 영역인 컴포저블 함수 (옵션 / 기본 값 - Unit)
+
 Composable function with stickyHeader area (option / Default - Unit)
 
 ```kotlin
@@ -158,6 +166,7 @@ Composable function with stickyHeader area (option / Default - Unit)
 ```
 
 리스트를 보여줄 아이템 item, items 선택 가능 (필수)
+
 Items to display the list can be selected (required)
 
 ```kotlin
@@ -167,4 +176,5 @@ Items to display the list can be selected (required)
 ## Etc
 
 오류나 문의사항이 있으시면 이슈탭에 남겨주세요 감사합니다! :)
+
 If you have any errors or questions, please leave them on the issue tab Thank you! :)
